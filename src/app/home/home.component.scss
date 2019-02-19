@@ -3,8 +3,8 @@
 .margin {
 
     @media #{$mobile} {
-        margin-right: 5%;
-        margin-left: 5%;
+        margin-right: 0%;
+        margin-left: 0%;
     }
 
     @media #{$desktop} {
@@ -13,8 +13,7 @@
     }
 
     @media #{$tablet} {
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 0%;
+        margin-left: 0%;
     }
 }
-
