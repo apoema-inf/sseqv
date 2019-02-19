@@ -1,10 +1,17 @@
-<nav class="uk-navbar-container uk-margin" uk-navbar>
+
+<nav class="uk-navbar uk-navbar-container uk-margin uk-hidden@m">
+    <div class="uk-navbar-left">
+        <a class="uk-navbar-toggle" uk-navbar-toggle-icon href="" uk-toggle="target: #offcanvas-nav"></a>
+    </div>
+</nav>
+
+<nav class="uk-navbar-container uk-margin uk-visible@m" uk-navbar>
   <div class="uk-navbar-center">
 
     <div class="uk-navbar-center-left">
       <div>
         <ul class="uk-navbar-nav">
-          <li class="uk-active"><a href="#">Início</a></li>
+          <li><a href="#">Início</a></li>
           <li>
             <a href="#">Atualidades</a>
             <div class="uk-navbar-dropdown">
@@ -17,8 +24,9 @@
           </li>
         </ul>
       </div>
-    </div> 
-    <a class="uk-navbar-item uk-logo" href="#"><img id='logo' src="../../assets/img/"></a>
+    </div>
+    <a class="uk-navbar-item uk-logo" href="#"><img src="../../assets/img/logo.png
+      " id="logo"></a>
     <div class="uk-navbar-center-right">
       <div>
         <ul class="uk-navbar-nav">
@@ -40,3 +48,25 @@
 
   </div>
 </nav>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+  <div class="uk-offcanvas-bar">
+
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-active"><a href="#">Active</a></li>
+      <li class="uk-parent">
+        <a href="#">Parent</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#">Sub item</a></li>
+          <li><a href="#">Sub item</a></li>
+        </ul>
+      </li>
+      <li class="uk-nav-header">Header</li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+      <li class="uk-nav-divider"></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+    </ul>
+
+  </div>
+</div>
