@@ -1,39 +1,40 @@
-<div class="uk-section">
-  <hr class="uk-divider-icon">
-  <div class="uk-container">
-    <div class="uk-child-width-1-1@m" uk-grid>
-      <div class="uk-flex uk-flex-center uk-flex-middle ">
-        <a href="http://apoema.inf.ufg.br" target="_blank">
-          <img src="../../assets/img/logo.png" style="max-width:15rem">
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
+<hr>
 <footer class="page-footer">
-  <div class="uk-container" uk-grid>
-    <div class="uk-width-1-2@m uk-width-1-1@s uk-flex uk-flex-middle uk-text-center uk-margin">
-      <div class="uk-child-width-1-1 uk-flex uk-flex-middle uk-flex-center" uk-grid>
-        <img class="uk-margin-top" src="assets/images/logo-charset.png" style="width: 100px;">
-        <p class="white-text">Alameda Palmeiras, s/n - Câmpus Samambaia, Goiânia - GO, 74690-900, 2°
+  <div class="uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+    <div class="uk-flex uk-flex-middle uk-flex-center">
+      <div>
+        <img class="uk-align-center" src="assets/img/logo.png" style="width: 300px;">
+        <p align="center" class="white-text">Alameda Palmeiras, s/n - Câmpus Samambaia, Goiânia - GO, 74690-900, 2°
           Andar, Sala 244 - APOEMA</p>
       </div>
 
     </div>
-    <div class="uk-width-1-4@m uk-width-1-1@s uk-flex uk-flex-center uk-margin">
+    <div class="uk-child-width-1-2@m uk-child-width-1-1@s uk-flex uk-flex-middle uk-flex-center" uk-grid>
       <div>
-        <h5 class="white-text">Parceiros</h5>
+        <h3 class="white-text">Menu</h3>
         <ul class="uk-list">
-          <li>Parceiro 1</li>
-          <li>Parceiro 2</li>
+          <li><a>Início</a></li>
+          <li><a>Atualidades</a>
+            <div uk-dropdown="pos: right-center">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Publicações</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a>Ferramentas</a>
+            <div uk-dropdown="pos: right-center">
+              <ul class="uk-nav uk-dropdown-nav">
+                <li><a href="#">ProjeQtor</a></li>
+                <li><a href="#">GitHub</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a>Sobre</a></li>
         </ul>
       </div>
-
-    </div>
-    <div class="uk-width-1-4@m uk-width-1-1@s uk-flex uk-flex-center uk-margin">
       <div>
-        <h5 class="white-text">Contato</h5>
+        <h3 class="white-text">Contato</h3>
         <ul class="uk-list">
           <li>qualivida@sseqv.ufg.br</li>
           <li>(62) 3521-1724</li>
