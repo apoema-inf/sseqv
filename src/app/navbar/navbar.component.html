@@ -9,8 +9,16 @@
 </nav>
 
 <nav class="uk-navbar-container uk-margin-bottom uk-visible@m" uk-navbar uk-sticky="bottom: #offset">
+
+  <div class="uk-navbar-left">
+
+    <div class="uk-margin-xlarge-left">
+      <a class="uk-navbar-item uk-logo" href="/home"><img src="../../assets/img/logo.png" id="logo"></a>
+    </div>
+
+  </div>
+
   <div class="uk-navbar-center">
-    <div class="uk-navbar-center-left">
       <div>
         <ul class="uk-navbar-nav">
           <li><a href="#">Início</a></li>
@@ -23,31 +31,22 @@
               </ul>
             </div>
           </li>
-        </ul>
-      </div>
-    </div>
-    <a class="uk-navbar-item uk-logo" href="#"><img src="../../assets/img/logo.png
-      " id="logo"></a>
-    <div class="uk-navbar-center-right">
-      <div>
-        <ul class="uk-navbar-nav">
           <li><a href="#">Ferramentas</a>
             <div class="uk-navbar-dropdown">
               <ul class="uk-nav uk-navbar-dropdown-nav">
-                <!-- <li class="uk-active"><a href="#">Active</a></li> -->
-                <li><a href="#">ProjeQtor</a></li>
-                <li><a href="#">GitHub</a></li>
+                <li><a href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
+                <li><a href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
               </ul>
             </div>
           </li>
           <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre</a></li>
+          <li><a routerLink="/sobre">Sobre</a></li>
         </ul>
-
+  
       </div>
+  
+  
     </div>
-
-  </div>
 </nav>
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
@@ -65,12 +64,12 @@
       <li class="uk-parent">
         <a href="#">Ferramentas</a>
         <ul class="uk-nav-sub">
-          <li><a href="#">ProjeQtor</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
+          <li><a href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
         </ul>
       </li>
       <li><a href="#">Contato</a></li>
-      <li><a href="#">Sobre</a></li>
+      <li><a routerLink="/sobre">Sobre</a></li>
     </ul>
 
   </div>
