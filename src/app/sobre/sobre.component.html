@@ -53,49 +53,21 @@
       <div class="uk-flex uk-flex-center">
         <h2>Coordenação</h2>
       </div>
-      <div class="uk-child-width-1-4@m uk-child-width-1-1@s uk-flex uk-flex-center" uk-grid>
-        <div>
+      <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-flex uk-flex-center" uk-grid>
+        <div *ngFor="let coordenador of coordenadores">
           <div class="uk-card uk-card-default">
             <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Prof. Dr. Eliomar
-                      Araújo de Lima</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Coordenador técnico</p>
-                  </div>
-                </div>
+                <img class="uk-align-center uk-border-circle" width="65" height="65" src="../../assets/img/avatar.png">
+              
+              <div class="uk-width-expand">
+                <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{coordenador.nome}}
+                </h3>
+                <p align="center" class="uk-text-meta uk-margin-remove-top">{{coordenador.cargo}}</p>
 
               </div>
             </div>
             <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">
-                      Prof. Dr. Fábio Nogueira de Lucena
-                    </h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Subcoordenador técnico</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/6428011745982173" class="uk-align-center uk-button uk-button-text">Ver
+              <a target="_blank" href="{{coordenador.lattes}}" class="uk-align-center uk-button uk-button-text">Ver
                 mais</a>
             </div>
           </div>
@@ -110,8 +82,8 @@
         <h2>Bolsistas</h2>
       </div>
 
-      <div class="uk-child-width-1-4@m uk-child-width-1-1@s uk-flex uk-flex-center" uk-grid>
-        <div>
+      <div class="uk-child-width-1-3@m uk-child-width-1-1@s uk-flex uk-flex-center" uk-grid>
+        <div *ngFor="let bolsista of bolsistas">
           <div class="uk-card uk-card-default">
             <div class="uk-card-header">
               <div class="uk-grid-small uk-flex-middle" uk-grid>
@@ -119,268 +91,17 @@
                   <img class="uk-align-center uk-border-circle" width="65" height="65"
                     src="../../assets/img/avatar.png">
                   <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Carlos Hernane
-                      Oliveira</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Suporte técnico</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Douglas Tonetto
-                      Pfeifer</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Desenvolvedor iOS</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Hyago Vieira de Souza
+                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{bolsista.nome}}
                     </h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Desenvolvedor Web</p>
+                    <p align="center" class="uk-text-meta uk-margin-remove-top">{{bolsista.cargo}}</p>
                   </div>
                 </div>
 
               </div>
             </div>
             <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Karine Pires de
-                      Araújo</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Desenvolvedora Web</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Luísa Nunes C. de
-                      Oliveira</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Max Stival Rocha</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Nicolas de Sousa E.
-                      Da Cruz</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Raquel de Andrade
-                      Corrêa</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Thaynara Mabille
-                      Marques Ribeiro</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Túlio Alcântara
-                      Magalhães</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Desenvolvedor Android</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Vinícius Borges
-                      Alencar</h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">Desenvolvedor Web</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
-                mais</a>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="uk-card uk-card-default">
-            <div class="uk-card-header">
-              <div class="uk-grid-small uk-flex-middle" uk-grid>
-                <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
-                  <div class="uk-width-expand">
-                    <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">Ygor Galvão Lourenço
-                    </h3>
-                    <p align="center" class="uk-text-meta uk-margin-remove-top">NADA</p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-            <div class="uk-card-footer ">
-              <a href="http://lattes.cnpq.br/1362170231777201" class="uk-align-center uk-button uk-button-text">Ver
+              <a target="_blank" href="http://lattes.cnpq.br/1362170231777201"
+                class="uk-align-center uk-button uk-button-text">Ver
                 mais</a>
             </div>
           </div>
