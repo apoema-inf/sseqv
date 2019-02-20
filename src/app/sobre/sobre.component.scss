@@ -1,35 +1,40 @@
-
 .staff {
-    background-color: #e3651c;
+  background-color: #e3651c;
 }
 
 .description {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .duration {
-    background-color: #fca000;
+  background-color: #fca000cb;
 }
 
 h1 {
-    color: white;
+  color: white;
 }
 
 h2 {
-    color: white !important;
+  color: white !important;
 }
 
 h3 {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 #sobre {
-    color: darkgray;
+  color: darkgray;
 }
 
 p {
-    margin-left: 5%;
-    margin-top: 5%;
-    align-self: center;
-    font-size: 1.1em;
+  margin-left: 5%;
+  margin-top: 5%;
+  align-self: center;
+  font-size: 1.1em;
+}
+
+.shadow {
+  -webkit-box-shadow: inset 0px -5px 46px -6px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: inset 0px -5px 46px -6px rgba(0, 0, 0, 0.35);
+  box-shadow: inset 0px -5px 46px -6px rgba(0, 0, 0, 0.35);
 }
