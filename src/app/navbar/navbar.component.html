@@ -12,40 +12,41 @@
   <div class="uk-navbar-left">
 
     <div class="uk-margin-xlarge-left">
-      <a class="uk-navbar-item uk-logo" href="#">SSEQV</a>
+      <a style="max-height: 50px" class="uk-navbar-item uk-logo" href="#">SSEQV</a>
+      <span class="uk-text-meta">Sistema de Socialização em Qualidade de Vida do Ministério da Saúde</span>
     </div>
 
   </div>
 
   <div class="uk-navbar-center">
-      <div>
-        <ul class="uk-navbar-nav">
-          <li><a href="#">Início</a></li>
-          <li>
-            <a href="#">Atualidades</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Publicações</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Ferramentas</a>
-            <div class="uk-navbar-dropdown">
-              <ul class="uk-nav uk-navbar-dropdown-nav">
-                <li><a href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
-                <li><a href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">Contato</a></li>
-          <li><a routerLink="/sobre">Sobre</a></li>
-        </ul>
-  
-      </div>
-  
-  
+    <div>
+      <ul class="uk-navbar-nav">
+        <li><a href="#">Início</a></li>
+        <li>
+          <a href="#">Atualidades</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="#noticias" uk-scroll>Notícias</a></li>
+              <li><a href="#publicacoes" uk-scroll>Publicações</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Ferramentas</a>
+          <div class="uk-navbar-dropdown">
+            <ul class="uk-nav uk-navbar-dropdown-nav">
+              <li><a href="http://pmo.institutoapoema.org">ProjeQtor</a></li>
+              <li><a href="https://github.com/kyriosdata/sseqv">GitHub</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Contato</a></li>
+        <li><a routerLink="/sobre">Sobre</a></li>
+      </ul>
+
     </div>
+
+
+  </div>
 </nav>
 
 <div id="offcanvas-nav" uk-offcanvas="overlay: true">
@@ -56,8 +57,8 @@
       <li class="uk-parent">
         <a href="#">Atualidades</a>
         <ul class="uk-nav-sub">
-          <li><a href="#">Notícias</a></li>
-          <li><a href="#">Publicações</a></li>
+          <li><a href="#noticias" uk-scroll>Notícias</a></li>
+          <li><a href="#publicacoes" uk-scroll>Publicações</a></li>
         </ul>
       </li>
       <li class="uk-parent">

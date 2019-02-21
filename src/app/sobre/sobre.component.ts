@@ -87,7 +87,7 @@ export class SobreComponent implements OnInit {
       {
         nome: "Vinícius Borges Alencar",
         cargo: "Graduando em Ciência da Computação",
-        lattes: "",
+        lattes: "http://lattes.cnpq.br/8713357903992486",
         avatar: "assets/img/vinicius.jpg"
       },
       {

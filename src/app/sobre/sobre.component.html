@@ -1,4 +1,7 @@
 <div class="uk-section description">
+  <div class="bg-financiadores uk-text-center uk-padding-small uk-margin-medium-bottom">
+    <h2>Projeto financiado e mantido pelo Ministério da Saúde/Fundo Nacional de Saúde</h2>
+  </div>
   <div class="uk-container uk-flex uk-flex-center">
     <div>
       <h1 align="center" id="sobre">
@@ -10,7 +13,8 @@
         com o propósito de facilitar a localização dos mesmos pelas partes interessadas na incorporação de tecnologias
         no âmbito do SUS.
       </p>
-      <p>Para contemplar o objetivo retrocitado, uma série de esforços de pesquisa serão empreendidos no âmbito da
+      <p>Para contemplar o objetivo retrocitado, uma série de esforços de pesquisa e desenvolvimento estão sendo
+        empreendidos no âmbito da
         Universidade, de modo a guiar a implementação de ações e desenvolvimento de artefatos e entregáveis
         intermediários e final, a partir dos seguintes objetivos:
       </p>
@@ -57,8 +61,8 @@
         <div *ngFor="let coordenador of coordenadores">
           <div class="uk-card uk-card-default">
             <div class="uk-card-header">
-                <img class="uk-align-center uk-border-circle" width="65" height="65" src="{{coordenador.avatar}}">
-              
+              <img class="uk-align-center uk-border-circle" width="65" height="65" src="{{coordenador.avatar}}">
+
               <div class="uk-width-expand">
                 <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{coordenador.nome}}
                 </h3>
@@ -88,8 +92,7 @@
             <div class="uk-card-header">
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
-                  <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="{{bolsista.avatar}}">
+                  <img class="uk-align-center uk-border-circle" width="65" height="65" src="{{bolsista.avatar}}">
                   <div class="uk-width-expand">
                     <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{bolsista.nome}}
                     </h3>
@@ -100,8 +103,7 @@
               </div>
             </div>
             <div class="uk-card-footer ">
-              <a target="_blank" href="{{bolsista.lattes}}"
-                class="uk-align-center uk-button uk-button-text">Ver
+              <a target="_blank" href="{{bolsista.lattes}}" class="uk-align-center uk-button uk-button-text">Ver
                 mais</a>
             </div>
           </div>
