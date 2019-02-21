@@ -18,12 +18,21 @@ h2 {
   color: white !important;
 }
 
+.financiado {
+  display:inline-block !important;
+  vertical-align:middle !important;
+}
+
 h3 {
   font-size: 1em;
 }
 
 #sobre {
   color: darkgray;
+}
+
+#description {
+  padding-top: 0;
 }
 
 p {
@@ -35,4 +44,5 @@ p {
 
 .bg-financiadores {
   background-color: #39f;
+  padding-top: 2em;
 }
