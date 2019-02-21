@@ -57,7 +57,7 @@ export class SobreComponent implements OnInit {
       {
         nome: "Max Stival Rocha",
         cargo: "Graduando em Sistemas de Informação",
-        lattes: "",
+        lattes: "http://lattes.cnpq.br/9729379560275328",
         avatar: "assets/img/max.jpeg"
       },
       {
@@ -69,7 +69,7 @@ export class SobreComponent implements OnInit {
       {
         nome: "Raquel de Andrade Corrêa",
         cargo: "Graduanda em Sistemas de Informação",
-        lattes: "",
+        lattes: "http://lattes.cnpq.br/4535240596782679",
         avatar: "assets/img/raquel.jpeg"
       },
       {
