@@ -37,7 +37,7 @@
   </div>
 </div>
 
-<div class="shadow uk-section duration">
+<div class="uk-section duration">
   <div class="uk-container uk-text-center">
     <h2>Duração estimada: 16 meses</h2>
   </div>
@@ -57,7 +57,7 @@
         <div *ngFor="let coordenador of coordenadores">
           <div class="uk-card uk-card-default">
             <div class="uk-card-header">
-                <img class="uk-align-center uk-border-circle" width="65" height="65" src="../../assets/img/avatar.png">
+                <img class="uk-align-center uk-border-circle" width="65" height="65" src="{{coordenador.avatar}}">
               
               <div class="uk-width-expand">
                 <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{coordenador.nome}}
@@ -89,7 +89,7 @@
               <div class="uk-grid-small uk-flex-middle" uk-grid>
                 <div class="uk-width-auto">
                   <img class="uk-align-center uk-border-circle" width="65" height="65"
-                    src="../../assets/img/avatar.png">
+                    src="{{bolsista.avatar}}">
                   <div class="uk-width-expand">
                     <h3 align="center" class="uk-card-title uk-margin-remove-bottom uk-margin-top">{{bolsista.nome}}
                     </h3>
@@ -100,7 +100,7 @@
               </div>
             </div>
             <div class="uk-card-footer ">
-              <a target="_blank" href="http://lattes.cnpq.br/1362170231777201"
+              <a target="_blank" href="{{bolsista.lattes}}"
                 class="uk-align-center uk-button uk-button-text">Ver
                 mais</a>
             </div>
