@@ -63,7 +63,7 @@ export class SobreComponent implements OnInit {
       {
         nome: "Nicolas de Sousa E. Da Cruz",
         cargo: "Graduando em Gestão da Informação",
-        lattes: "",
+        lattes: "http://lattes.cnpq.br/0781723700217537",
         avatar: "assets/img/nicolas.jpg"
       },
       {
@@ -93,7 +93,7 @@ export class SobreComponent implements OnInit {
       {
         nome: "Ygor Galvão Lourenço",
         cargo: "Graduado em Gestão da Informação",
-        lattes: "",
+        lattes: "http://lattes.cnpq.br/4675488468292421",
         avatar: "assets/img/ygor.png"
       })
   }
