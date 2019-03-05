@@ -52,9 +52,8 @@
 
         <div uk-slider="autoplay: true; center: true; index: 1">
             <div class="uk-position-relative uk-visible-toggle" tabindex="-1">
-                <ul class="uk-slider-items uk-child-width-1-3@s uk-grid">
+                <ul uk-height-match="target: > div > .uk-card" class="uk-slider-items uk-child-width-1-3@s uk-grid">
                     <div *ngFor="let noticia of noticias">
-                        <li>
                             <div class="noticia uk-card uk-card-default">
                                 <div class="uk-card-media-top">
                                     <img src="{{ noticia.imagem }}" alt="">
@@ -62,11 +61,10 @@
                                 <div class="uk-card-body">
                                     <h3 class="uk-card-title">{{ noticia.titulo }}</h3>
                                     <p>{{ noticia.descricao}}</p>
-                                    <a target="_blank" class="uk-button uk-button-primary"
+                                    <a target="_blank" class="uk-position-bottom-center uk-button uk-button-primary" style="margin-bottom: 1em"
                                        href="{{ noticia.link }}">Ler</a>
                                 </div>
                             </div>
-                        </li>
                     </div>
                 </ul>
 

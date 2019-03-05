@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
                 imagem: ''
             },
             {
-                titulo: 'Denças raras: Governo, Especialistas e Pacientes juntos por um Sistema de Saúde Público inclusivo',
+                titulo: 'Doenças raras: Governo, Especialistas e Pacientes juntos por um Sistema de Saúde Público inclusivo',
                 descricao: 'A participação social como forma para superar os desafios de incluir no SUS tratamentos para doenças pouco conhecidas',
                 link: 'http://conitec.gov.br/doencas-raras-governo-especialistas-e-pacientes-juntos-por-um-sistema-de-saude-publico-inclusivo',
                 imagem: ''
