@@ -21,13 +21,14 @@
 	<!-- Sidebar -->
 	<section id="sidebar">
 		<div class="inner">
+			<img id="logo-sseqv" width="200" src="../../img/logo-sseqv.png">
 			<nav>
 				<ul>
 					<li><a href="#intro">Bem-vindo</a></li>
 					<li><a href="#avancada">Busca Avançada</a></li>
 					<li><a href="#observatorio">Observatório de Qualidade de Vida</a></li>
 					<li><a href="#monitoramento">Monitoramento do Horizonte Tecnológico</a></li>
-					<li><a href="#comunidade">SISREBRATS Communities</a></li>
+					<li><a href="#comunidade">Comunidade SSEQV</a></li>
 					<li><a href="#contato">Contato</a></li>
 				</ul>
 			</nav>
@@ -40,11 +41,15 @@
 		<!-- Intro -->
 		<section id="intro" class="wrapper style1 fullscreen fade-up">
 			<div class="inner">
-				<h1>SSEQV - Search Engine</h1>
+				<h1 id="titulo">Sinopse</h1>
+				<p>Visão geral do Protótipo de um sistema para captação, avaliação, armazenamento e disponibilização de
+					estudos sobre qualidade de vida, devidamente indexados, com o propósito de facilitar a localização
+					dos mesmos pelas partes interessadas na incorporação de tecnologias no âmbito do SUS.</p>
+				<h2 id="titulo">Academic and Scientific Healthcare Search</h2>
 				<form>
 					<div class="fields">
 						<input id="input-search" type="text" placeholder="Busque aqui" />
-						<button type="submit" id="btn-search">find</button>
+						<button type="submit" id="btn-search">Buscar</button>
 					</div>
 				</form>
 				<ul class="actions">
@@ -62,6 +67,7 @@
 				<button id="cat1" class="categoria categoria-active" onclick="active('cat1')">Bases Acadêmicas</button>
 				<button id="cat2" class="categoria" onclick="active('cat2')">Bases Científicas</button>
 				<button id="cat3" class="categoria" onclick="active('cat3')">Bases Acadêmicas e Científicas</button>
+				<button id="cat4" class="categoria" onclick="active('cat4')">Diretrizes Metodológicas</button>
 				<div class="features">
 					<section>
 						<form method="post" action="#">
@@ -107,6 +113,39 @@
 									</select>
 								</div>
 								<div class="col-12">
+									<label>Tipos de estudo em ATS</label>
+									<!-- opções -->
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">parecer técnico-científco (PTC) e nota técnica de revisão
+										rápida (NTRR)</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">revisão sistemática</label>
+									<br>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">revisão de revisões sistemáticas (RRS)</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">análise econômica em saúde (AES) e análise de impacto
+										orçamentário (AIO)</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">avaliação e adaptação de diretrizes clínicas</label>
+								</div>
+								<div class="col-5">
+									<label>Cenários de aplicação</label>
+									<!-- opções -->
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">promoção de saúde</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">prevenção de doenças</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">redução de danos</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">diagnóstico e tratamento</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">reabilitação</label>
+									<input type="checkbox" id="demo-human" name="demo-human">
+									<label for="demo-human">cuidados paliativos</label>
+								</div>
+								<div class="col-12">
 									<ul class="actions">
 										<li><input type="submit" value="Buscar" class="primary btn-green" /></li>
 										<li><input type="reset" value="Resetar" /></li>
@@ -136,7 +175,7 @@
 		<!-- Comunidade -->
 		<section id="comunidade" class="wrapper style2 fade-up">
 			<div class="inner">
-				<h1>SISREBRATS Communities</h1>
+				<h1>Comunidade SSEQV</h1>
 			</div>
 		</section>
 
