@@ -12,7 +12,8 @@ export class HomeComponent implements OnInit {
 
     constructor() {
 
-        this.noticias.push({
+        this.noticias.push(
+            {
                 titulo: 'Health-Related Quality of Life and Well-Being',
                 descricao: 'Health-related quality of life (HRQoL) is a multi-dimensional concept that includes domains related to physical, mental, emotional, and social functioning',
                 link: 'https://www.healthypeople.gov/2020/about/foundation-health-measures/Health-Related-Quality-of-Life-and-Well-Being',
@@ -31,6 +32,12 @@ export class HomeComponent implements OnInit {
                 imagem: ''
             });
         this.publicacoes.push({
+            titulo: 'Relatório Técnico Parcial',
+            descricao: 'Relatório Técnico - SSEQV',
+            label: 'PDF',
+            link: 'assets/anexos/RelatorioTecnicoParcial_SSEQV.pdf'
+        },
+            {
                 titulo: 'Projeto QualiVida',
                 descricao: 'Sinopse - SSEQV',
                 label: 'PDF',
@@ -53,7 +60,9 @@ export class HomeComponent implements OnInit {
                 descricao: 'Portaria SCTIE/MS Nº 26/2015',
                 label: 'PDF',
                 link: 'http://conitec.gov.br/images/Legislacao/Portaria26de2015_Requisitos_SubmissaoeAnalisedeProposta.pdf'
-            });
+            }
+            
+            );
     }
 
     ngOnInit() {
